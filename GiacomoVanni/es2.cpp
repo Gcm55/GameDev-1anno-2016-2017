@@ -35,33 +35,20 @@ int main()
 		cout<<endl;
 	}
 	short unsigned int sceltax,sceltay;
-	cout<<"Giocatore inserisci X ed Y di dove vuoi colpire(compresi da 0 a 4:"<<endl;
+	cout<<"Giocatore inserisci X ed Y di dove vuoi colpire(compresi da 1 a 5:"<<endl;
 	cin>>sceltax;
 	cin>>sceltay;
-	if(sceltax>4 || sceltay>4)
+	if(sceltax>5 || sceltay>5)
 	{
-		cout<<"Inserisci un numero da 0 a 4 amico."<<endl;
+		cout<<"Inserisci un numero da 1 a 5 amico."<<endl;
 	}
-	for(i=0;i<R;i++)
+		for(i=0;i<R;i++)
 	{
 		for(j=0;j<C;j++)
 		{
 			if(mat[sceltax][sceltay]== cpu)
 			{
 				cout<<" Hai fatto centro!!"<<endl;
-			}
-			else
-			{
-				for(i=mat[sceltax][sceltay]-1;i<mat[sceltax][sceltay]+1;i++)
-				{
-					for(j=mat[sceltax][sceltay]-1;j<mat[sceltax][sceltay]+1;j++)
-					{
-						if(mat[sceltax][sceltay]== cpu)
-			{
-				cout<<" Ci sei vicino amico"<<endl;
-			}
-					}
-				}
 			}
 		}
 		
